@@ -1,5 +1,13 @@
 # Getting Started with Create React App
 
+
+## Carbon Credits Application
+
+An application that address both the regulatory and voluntary markets, with being a decentralized way to sell your unused carbon permits (issued by government) to other blockchain-based companies.
+We had initially decided to utilize Vue.js for this application, but ran into errors with routing. As a result, we pivoted to utilizing a React frontend with MetaMask SDK.
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
