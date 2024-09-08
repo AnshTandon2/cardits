@@ -3,7 +3,7 @@
 
 ## Carbon Credits Application
 
-Deployed on Vercel: https://cardits-bva9g7psq-ansh2s-projects.vercel.app
+Deployed on Vercel: [Cardits](https://cardits.vercel.app/login)
 
 An application that address both the regulatory and voluntary markets, with being a decentralized way to sell your unused carbon permits (issued by government) to other blockchain-based companies.
 We had initially decided to utilize Vue.js for this application, but ran into errors with routing. As a result, we pivoted to utilizing a React frontend with MetaMask SDK.
