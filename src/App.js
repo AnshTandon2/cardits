@@ -12,12 +12,13 @@ import CloseIcon from "@mui/icons-material/Close";
 import TextField from "@mui/material/TextField";
 import UploadFileIcon from "@mui/icons-material/UploadFile";
 import { Routes, Route, useLocation } from "react-router-dom";
-import Marketplace from "./Marketplace"; // Import your Marketplace component
-import About from "./About"; // Import your About component
-import Login from "./Login"; // Import your Login component
-import Audits from "./Audits"; // Import your Audits component
+//importing rest of componenets
+import Marketplace from "./Marketplace";
+import About from "./About";
+import Login from "./Login";
+import Audits from "./Audits";
 
-// Dashboard component
+// main dashboard for carbon credits
 const Dashboard = () => {
   const credits = 75;
   const price = 50;
@@ -149,15 +150,12 @@ const Dashboard = () => {
 };
 
 function App() {
-  const location = useLocation(); // Get the current route
-
-  // Hide NavBar if the user is on the login page
+  const location = useLocation();
   const showNavBar = location.pathname !== "/login";
   const showNavBar2 = location.pathname !== "/audits";
   return (
     <div>
-      {showNavBar && showNavBar2 && <NavBar />}{" "}
-      {/* Conditionally render NavBar */}
+      {showNavBar && showNavBar2 && <NavBar />} {/* this will render navbar */}
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/marketplace" element={<Marketplace />} />
